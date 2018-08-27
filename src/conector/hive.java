@@ -25,8 +25,8 @@ public class hive {
     try {
         //Conect
         Class.forName(driverName);
-        Connection con = DriverManager.getConnection("jdbc:hive2://10.5.71.5:10000/default", 
-                "root", "welcome1");
+        Connection con = DriverManager.getConnection("jdbc:hive2://localhost/default", 
+                "user", "Password");
 	Statement stmt = con.createStatement();
 	 
         
